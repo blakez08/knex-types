@@ -256,7 +256,7 @@ export function getType(
     case "date":
     case "timestamp":
     case "timestamptz":
-      return "Date";
+      return "string";
     case "json":
     case "jsonb":
       if (defaultValue) {

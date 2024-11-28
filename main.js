@@ -8,7 +8,7 @@ exports.updateTypes = updateTypes;
 var _camelCase2 = _interopRequireDefault(require("lodash/camelCase"));
 var _upperFirst2 = _interopRequireDefault(require("lodash/upperFirst"));
 var _fs = _interopRequireDefault(require("fs"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 /* SPDX-FileCopyrightText: 2016-present Kriasoft <hello@kriasoft.com> */
 /* SPDX-License-Identifier: MIT */
 
@@ -147,7 +147,7 @@ function getType(udt, customTypes, defaultValue) {
     case "date":
     case "timestamp":
     case "timestamptz":
-      return "Date";
+      return "string";
     case "json":
     case "jsonb":
       if (defaultValue) {
